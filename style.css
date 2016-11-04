@@ -72,10 +72,15 @@ p#p01 {
     width: 100%;
     text-align: center;
 }
-a:link    {color:white; background-color:transparent; text-decoration:none}
-a:visited {color:white; background-color:transparent; text-decoration:none}
-a:hover   {color:white; background-color:transparent; text-decoration:none}
-a:active  {color:white; background-color:transparent; text-decoration:none}
+a {
+	color: white;
+}
+
+a:hover {
+	color:#337ab7; 
+	background-color:transparent; 
+	text-decoration:none;
+}
 
 caption {
     color: white;
@@ -93,10 +98,9 @@ td {
     padding: 8px;
 }
 .sidebar {
-	text-align: center;
+	text-align: right;
 	padding-right: 0px;
 	padding-left: 0px;
-	border-left-style: ridge;
     border-right-style: ridge;
 }
  
@@ -175,23 +179,17 @@ div.wrapperExcursiones {
 .menu-closed{
 	display: none;
 }
-@media (min-width: 768px){
-	#menu{
-		display: block;
-	}
-	.menu-closed {
-		display: none;
-	}
-	.menu-opener {
-		display: none;
-	}
-	.menu-opened {
-		display: none;
-	}
-	#menu-mobile {
-		display: none;
-	}
+
+.header-mobile-wrapper {
+	display: block;
+	background-color: black; 
 }
+
+.main-title-desktop {
+	text-decoration: none;
+	display: none;
+}
+
 .wrapper-texto-de-imagen {
 	position: absolute;
    	top: -12px;
@@ -212,7 +210,7 @@ div.wrapperExcursiones {
     float: right;
     border-style: groove;
     border-color: white;
-    background-color: navy;
+    margin-top: 20px;
 }
 
 .linea-menu-open {
@@ -283,12 +281,67 @@ div.wrapperExcursiones {
 	margin-bottom: 0px;
 }
 
-.titulo-principal {
+.main-title-mobile {
 	text-decoration: none;
+	display: inline-block;
+	padding: 0px;
+    float: left;
+    margin-left: 15px;
 }
 
-.sidebar-titulo {
+.sidebar-major-title {
    	width: 100%;
    	color: white;
    	text-decoration: none;
+}
+
+.sidebar-major-title:hover {
+	color:#337ab7; 
+	background-color:transparent; 
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.sidebar-minor-title {
+   	width: 100%;
+   	color: white;
+   	text-decoration: none;
+	display: none;
+}
+
+.opened .sidebar-minor-title{
+	display: block;
+}
+
+/*.sidebar-minor-title-opened {
+	display: block;
+}*/
+
+.wrapper-sidebar-text {
+	display: inline-block;
+}
+
+@media (min-width: 768px){
+	#menu{
+		display: block;
+	}
+	.menu-closed {
+		display: none;
+	}
+	.menu-opener {
+		display: none;
+	}
+	.menu-opened {
+		display: none;
+	}
+	#menu-mobile {
+		display: none;
+	}
+	.header-mobile-wrapper {
+		display: none;
+		background-color: none;
+	}
+	.main-title-desktop {
+		display: block;
+	}
 }

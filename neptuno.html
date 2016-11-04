@@ -2,11 +2,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Universos a la vuelta</title>
-		<link rel="stylesheet" href="C:\Users\facun\Mundos-a-la-vuelta/style.css" type="text/css" >
-		<script rel="C:\Users\facun\Mundos-a-la-vuelta\Script" src="myScript.js"></script>
+		<link rel="stylesheet" href="C:\Users\facun\Repositorios\Universos-a-la-vuelta/style.css" type="text/css" >
+		<script rel="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Script" src="myScript.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link href="C:\Users\facun\Mundos-a-la-vuelta\Bootstrap\bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    	<link href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Bootstrap\bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -14,8 +14,24 @@
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
 	    <script src="js/bootstrap.min.js"></script>
 		<header class="header">
-			<h1 class="titulo-principal">Universos a la vuelta</h1>
-			</p>
+			<div class="header-mobile-wrapper">
+				<h1 class="main-title-mobile">Universos a la vuelta</h1>
+				<div class="menu-opener">
+					<div class="linea-menu-open"></div>
+					<div class="linea-menu-open"></div>
+					<div class="linea-menu-open"></div>
+				</div>
+				<ul id="menu-mobile" class="menu-closed">
+				<hr>
+	  				<li><a href="#marte">Marte</a></li>
+	  				<li><a href="#saturno">Saturno</a></li>
+	 				<li><a href="#pluton">Plutón</a></li>
+	 				<li><a href="#venus">Venus</a></li>
+	  				<li><a href="#neptuno">Neptuno</a></li>
+	 				<li><a href="#luna">Luna</a></li>
+				</ul>
+			</div>
+			<h1 class="main-title-desktop">Universos a la vuelta</h1>
 			<div class="nav">
 			<ul id="menu">
   				<li><a href="#marte">Marte</a></li>
@@ -25,19 +41,6 @@
   				<li><a href="#neptuno">Neptuno</a></li>
  				<li><a href="#luna">Luna</a></li>
 			</ul>
-			<ul id="menu-mobile" class="menu-closed">
-  				<li><a href="#marte">Marte</a></li>
-  				<li><a href="#saturno">Saturno</a></li>
- 				<li><a href="#pluton">Plutón</a></li>
- 				<li><a href="#venus">Venus</a></li>
-  				<li><a href="#neptuno">Neptuno</a></li>
- 				<li><a href="#luna">Luna</a></li>
-			</ul>
-			<div class="menu-opener">
-				<div class="linea-menu-open"></div>
-				<div class="linea-menu-open"></div>
-				<div class="linea-menu-open"></div>
-			</div>
 		</header>
 		</div>
 		<div class="container">
@@ -80,42 +83,69 @@
 				</div>
 			</div>
 			<div class="sidebar col-xs-12 col-md-3">
-				<h3 class="sidebar-titulo">Otras opciones</h3>
-				<h3 class="sidebar-titulo">Simuladores</h3>
-				<h3 class="sidebar-titulo">Más fotos</h3>
-				<table style="width:100%">
-				<caption class="tabla-titulo">Clientes reservados</caption><br>
-		  			<tr>
-		    			<th class="tabla-titulo">Nombre</th>
-		    			<th class="tabla-titulo">Apellido</th> 
-		    			<th class="tabla-titulo">Destino</th>
-		  			</tr>
-		  			<tr>
-		    			<td>Jill</td>
-		    			<td>Smith</td> 
-		    			<td>A Neptuno</td>
-		  			</tr>
-		  			<tr>
-		    			<td>Eve</td>
-		    			<td>Jackson</td> 
-		    			<td>A Plutón</td>
-		  			</tr>
-		  			<tr>
-		    			<td>Juan</td>
-		    			<td>sarasa</td> 
-		    			<td>A Plutón</td>
-		  			</tr>
-		  			<tr>
-		    			<td>Manu</td>
-		 		   		<td>sarasa</td> 
-		  	  			<td>A Mercurio</td>
-		  			</tr>
-		  			<tr>
-		    			<td>Nico</td>
-		    			<td>Sarasa</td> 
-		    			<td>A Neptuno</td>
-		  			</tr>
-				</table>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">Aliens shopping</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">Plutonium for fuel</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">Gurdúues hunt</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">Other planets</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">MIB offices</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">Mars attack 2 casting</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
+				<div class="wrapper-sidebar-text">
+					<h3 class="sidebar-major-title">Spaceships sale!</h3>
+					<div class="sidebar-minor-title">
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+						<h4>Minor title</h4>
+					</div>
+				</div>
 			</div>
 			<p id="p01">No nos responsabilizamos por abducciones alien ni intoxicaciones causadas por asteroides</p>
 		</div>
@@ -133,9 +163,13 @@
 <script type="text/javascript">
 	$(document).ready(function(){
   
-  $("div.menu-opener").click(function(){
-    $(".menu-closed").toggleClass("menu-opened");
-  });
+	  	$(".menu-opener").click(function(){
+	    	$(".menu-closed").toggleClass("menu-opened");
+		});
 
-});
+		$('.wrapper-sidebar-text').click(function(){
+			$(this).toggleClass('opened');
+		});
+
+	});
 </script>
