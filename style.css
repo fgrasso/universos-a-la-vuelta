@@ -37,15 +37,6 @@ h3 {
 	font-size: 22px;
 	text-decoration: underline;
 }
-.header{
-    padding-top: 10;
-    text-align: center;
-    color: white;
-    font-size: 20px; 
-    position: relative;
-    text-decoration: none;
-    padding: 0.5%;
-}
 
 .header a:hover {
 	text-decoration: none;
@@ -98,10 +89,10 @@ td {
     padding: 8px;
 }
 .sidebar {
-	text-align: right;
+	text-align: center;
 	padding-right: 0px;
 	padding-left: 0px;
-    border-right-style: ridge;
+    border-right-style: none;
 }
  
 }
@@ -182,7 +173,6 @@ div.wrapperExcursiones {
 
 .header-mobile-wrapper {
 	display: block;
-	background-color: black; 
 }
 
 .main-title-desktop {
@@ -204,13 +194,17 @@ div.wrapperExcursiones {
    	transition: all ease 1s;
 }
 
-.menu-opener {
-	width: 60px;
+.header-lines {
+	
+    width: 60px;
     height: 32px;
-    float: right;
-    border-style: groove;
+    float: left;
     border-color: white;
-    margin-top: 20px;
+    margin-top: 26px;
+    display: inline-block;
+    margin-left: 0;
+    cursor: pointer;
+    
 }
 
 .linea-menu-open {
@@ -222,8 +216,10 @@ div.wrapperExcursiones {
 }
 
 .menu-opened {
-	width: 50px;
-	display: block;
+	width: 100%;
+    display: inline-block;
+    float: left;
+    text-align: left;
 }
 
 .excursiones-marte {
@@ -283,10 +279,10 @@ div.wrapperExcursiones {
 
 .main-title-mobile {
 	text-decoration: none;
-	display: inline-block;
-	padding: 0px;
+    display: inline-block;
+    padding: 0px;
     float: left;
-    margin-left: 15px;
+    cursor: pointer;
 }
 
 .sidebar-major-title {
@@ -318,7 +314,18 @@ div.wrapperExcursiones {
 }*/
 
 .wrapper-sidebar-text {
-	display: inline-block;
+	display: block;
+}
+
+.header{
+    padding-top: 10;
+    text-align: center;
+    color: white;
+    font-size: 20px; 
+    position: relative;
+    text-decoration: none;
+    padding: 0.5%;
+    background-color: black;
 }
 
 @media (min-width: 768px){
@@ -339,9 +346,24 @@ div.wrapperExcursiones {
 	}
 	.header-mobile-wrapper {
 		display: none;
-		background-color: none;
 	}
 	.main-title-desktop {
 		display: block;
 	}
+}
+
+@media (min-width: 991px){
+	.wrapper-sidebar-text {
+		display: inline-block;
+	}
+	.sidebar {
+		border-right-style: ridge;
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        background-color: transparent;
+    }
 }
