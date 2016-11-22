@@ -35,7 +35,6 @@ h1 {
 h3 {
 	color: white;
 	font-size: 22px;
-	text-decoration: underline;
 }
 
 .header a:hover {
@@ -62,6 +61,7 @@ p#p01 {
     display: inline-block;
     width: 100%;
     text-align: center;
+    margin-top: 15px;
 }
 a {
 	color: white;
@@ -90,8 +90,8 @@ td {
 }
 .sidebar {
 	text-align: center;
-	padding-right: 0px;
-	padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
     border-right-style: none;
 }
  
@@ -151,7 +151,7 @@ div.wrapperExcursiones {
 	padding-right: 20px;
 	padding-left: 20px;
 	margin-top: 20px;
-	height: 300px;
+	height: auto;
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition-duration: 1s;
@@ -224,6 +224,7 @@ div.wrapperExcursiones {
 
 .excursiones-marte {
 	background-image: url(http://i.ytimg.com/vi/qahrYLopPP4/maxresdefault.jpg);
+
 }
 
 .excursiones-saturno {
@@ -233,26 +234,38 @@ div.wrapperExcursiones {
 
 .excursiones-pluton {
 	background-image: url(http://eskipaper.com/images/pluto-5.jpg);
+
 }
 
 .excursiones-venus {
-	background-image: url(http://www.mrwallpaper.com/wallpapers/Venus-Planet-1024x768.jpg);
+	background-image: url(http://i.huffpost.com/gen/1933808/thumbs/o-PLANET-VENUS-facebook.jpg);
+
 }
 
 .excursiones-neptuno {
 	background-image: url(http://www.wallpapermaven.com/i/space/23/Neptune-1024x768.jpg);
+
 }
 
 .excursiones-luna {
-	background-image: url(http://www.mrwallpaper.com/wallpapers/Full-Moon-1024x768.jpg);
+	background-image: url(http://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/images/moon.jpg?itok=Z3AXf6Oq);
+
 }
 
-.excursiones:hover{
+.excursiones-effect {
+	height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 1s;
+    background-clip: content-box;
+}
+
+.excursiones-effect:hover{
 	filter: hue-rotate(90deg);
-	background-position-y: -20px;
+    background-position: -8;
 }
 
-.excursiones:hover .wrapper-texto-de-imagen .info{
+.excursiones-effect:hover .wrapper-texto-de-imagen .info{
 	opacity: 1;
 	transform: translatey(0);
 }
@@ -273,6 +286,11 @@ div.wrapperExcursiones {
     margin-top: 15px;
 }
 
+.fixed {
+	position: relative;
+	top: 150px;
+}
+
 .nav {
 	margin-bottom: 0px;
 }
@@ -287,34 +305,48 @@ div.wrapperExcursiones {
 
 .sidebar-major-title {
    	width: 100%;
-   	color: white;
-   	text-decoration: none;
+    color: cadetblue;
+    transition: color 300ms;
+    font-size: 20px;
+    margin-bottom: -6px;
+    padding-right: 10px;
 }
 
-.sidebar-major-title:hover {
-	color:#337ab7; 
+.sidebar-major-title:hover { 
 	background-color:transparent; 
-	text-decoration:none;
 	cursor: pointer;
+   	color: white;
 }
 
 .sidebar-minor-title {
    	width: 100%;
-   	color: white;
+   	color: cadetblue;
+    transition: color 300ms;
    	text-decoration: none;
 	display: none;
+}
+
+.sidebar-minor-title h4{
+	width: 100%;
+}
+
+.sidebar-minor-title h4:hover { 
+	cursor: pointer;
+   	color: white;
 }
 
 .opened .sidebar-minor-title{
 	display: block;
 }
 
-/*.sidebar-minor-title-opened {
-	display: block;
-}*/
-
 .wrapper-sidebar-text {
-	display: block;
+	display: inline-block;
+	width: 100%;
+}
+
+.sidebar-wrapper {
+	position: relative;
+	width: 100%;
 }
 
 .header{
@@ -353,12 +385,19 @@ div.wrapperExcursiones {
 }
 
 @media (min-width: 991px){
+	/*
 	.wrapper-sidebar-text {
 		display: inline-block;
 	}
+	*/
 	.sidebar {
-		border-right-style: ridge;
-		text-align: right;
+		border-left-style: ridge;
+	    text-align: left;
+	    margin-top: 20px;
+	    padding-left: 15px;
+	}
+	.fixed {
+		position: fixed;
 	}
 }
 
@@ -366,4 +405,16 @@ div.wrapperExcursiones {
     .header {
         background-color: transparent;
     }
+}
+
+.excursioner-text-info {
+	color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 10px;*/
+}
+
+.wrapper-sidebar-text:first-child .sidebar-major-title {
+    margin-top: 0;
 }
