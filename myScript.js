@@ -1,25 +1,3 @@
-var userChill = prompt("You can only access this page if you are cool. Are you a chill guy? (you should say 'yes')");
-
-if(userChill === "yes") {
-		confirm("Welcome!");
-	}
-	else {
-		
-		confirm("You don't deserve being here");
-	}
-
-function showAll() {
-   document.getElementById('show').style.display = "block";
-}
-
-function hideAll() {
-   document.getElementById('show').style.display = "none";
-}
-
-
-
-
-
 // Get the modal
 var modal = document.getElementById('myModal');
 
