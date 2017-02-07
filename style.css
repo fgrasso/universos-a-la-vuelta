@@ -37,8 +37,11 @@ h3 {
 	font-size: 22px;
 }
 
-.header a:hover {
+.header li:hover {
 	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	opacity: 0.5;
 }
 
 ul#menu {
@@ -48,7 +51,9 @@ ul#menu {
     border-bottom-style: solid;
 }
 ul#menu li {
-    		display:inline;
+	display: inline-block;
+    width: 95px;
+	font-family: monospace;
 }
 h2 {
 	color:red;
@@ -61,7 +66,8 @@ p#p01 {
     display: inline-block;
     width: 100%;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 a {
 	color: white;
@@ -94,8 +100,6 @@ td {
     padding-left: 0px;
     border-right-style: none;
 }
- 
-}
 
 div.sidebar a:hover{
 	opacity: 0.5;
@@ -104,7 +108,7 @@ div.sidebar a:hover{
 	width: 100%;
 }
 .header li {
-    padding: 1%;
+    
 }
 div.excursiones a:hover{
 	color:white; background-color:transparent; text-decoration:underline;
@@ -178,6 +182,7 @@ div.wrapperExcursiones {
 .main-title-desktop {
 	text-decoration: none;
 	display: none;
+	font-family: monospace;
 }
 
 .wrapper-texto-de-imagen {
@@ -252,6 +257,10 @@ div.wrapperExcursiones {
 
 }
 
+.excursiones-sol {
+	background-image: url(https://thenypost.files.wordpress.com/2013/12/sun.jpg);
+}
+
 .excursiones-effect {
 	height: 300px;
     background-repeat: no-repeat;
@@ -262,7 +271,7 @@ div.wrapperExcursiones {
 
 .excursiones-effect:hover{
 	filter: hue-rotate(90deg);
-    background-position: -8;
+    background-position-y: -20px;
 }
 
 .excursiones-effect:hover .wrapper-texto-de-imagen .info{
@@ -288,7 +297,7 @@ div.wrapperExcursiones {
 
 .fixed {
 	position: relative;
-	top: 150px;
+	top: -20px;
 }
 
 .nav {
@@ -305,7 +314,7 @@ div.wrapperExcursiones {
 
 .sidebar-major-title {
    	width: 100%;
-    color: cadetblue;
+    color: white;
     transition: color 300ms;
     font-size: 20px;
     margin-bottom: -6px;
@@ -316,32 +325,13 @@ div.wrapperExcursiones {
 	background-color:transparent; 
 	cursor: pointer;
    	color: white;
-}
-
-.sidebar-minor-title {
-   	width: 100%;
-   	color: cadetblue;
-    transition: color 300ms;
-   	text-decoration: none;
-	display: none;
-}
-
-.sidebar-minor-title h4{
-	width: 100%;
-}
-
-.sidebar-minor-title h4:hover { 
-	cursor: pointer;
-   	color: white;
-}
-
-.opened .sidebar-minor-title{
-	display: block;
+	opacity: 0.5;
 }
 
 .wrapper-sidebar-text {
 	display: inline-block;
 	width: 100%;
+	font-family: monospace;
 }
 
 .sidebar-wrapper {
@@ -363,6 +353,7 @@ div.wrapperExcursiones {
 @media (min-width: 768px){
 	#menu{
 		display: block;
+		font-size: 15px;
 	}
 	.menu-closed {
 		display: none;
@@ -390,15 +381,22 @@ div.wrapperExcursiones {
 		display: inline-block;
 	}
 	*/
+	#menu{
+		font-size: 20px;
+	}
+
 	.sidebar {
 		border-left-style: ridge;
 	    text-align: left;
-	    margin-top: 20px;
+	    margin-top: 37px;
 	    padding-left: 15px;
 	}
 	.fixed {
 		position: fixed;
 	}
+	ul#menu li {
+    width: 110px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -412,9 +410,14 @@ div.wrapperExcursiones {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    /*margin-top: 10px;*/
+	margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .wrapper-sidebar-text:first-child .sidebar-major-title {
     margin-top: 0;
 }
+
+@font-face { font-family: moonhouse; src: url('moonhouse.ttf'); }
+@font-face { font-family: Moiser; src: url('Typo Moiser free promo.ttf'); }
+@font-face { font-family: digitaltech; src: url('Digital_tech.otf'); }
