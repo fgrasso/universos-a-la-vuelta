@@ -24,12 +24,4 @@ var span = document.getElementsByClassName("close")[0];
     }
 }*/
 
-function myfunc(openMenu) {
-  var className = div.getAttribute("class");
-  if(className=="normal") {
-    div.className = "active";
-  }
-  else{
-    div.className = "normal";
-  }
-}
+

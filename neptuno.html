@@ -2,19 +2,18 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Universos a la vuelta</title>
-		<link rel="stylesheet" href="C:\Users\facun\Repositorios\Universos-a-la-vuelta/style.css" type="text/css" >
+		<link rel="stylesheet" href="style.css" type="text/css" >
 		<script rel="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Script" src="myScript.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Bootstrap\bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    	<link href="Bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#right-nav" data-offset="10">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Bootstrap\bootstrap-3.3.7-dist\js/bootstrap.min.js"></script>
-		<script src="scrollspy.min.js"></script>
+	    <script src="Bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 		<header class="header">
 			<div class="header-mobile-wrapper">
 				<div class="menu-opener header-lines">
@@ -24,33 +23,42 @@
 				</div>
 				<h1 class="main-title-mobile menu-opener">Universos a la vuelta</h1>
 				<ul id="menu-mobile" class="menu-closed">
-	  				<li>Aliens Shopping</li>
+					<li>
+						<a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\neptuno.html">Home</a>
+					</li>
+	  				<li>
+						<a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Aliens Shopping.html">Aliens Shopping</a>
+					</li>
 	  				<li>Plutonium fuel</li>
 	 				<li>Gurdúues hunt</li>
 	 				<li>Other planets</li>
 	  				<li>MIB offices</li>
 	 				<li>Mars attack 2</li>
-					<li>Spaceships sale!</li>
 				</ul>
 			</div>
 			<h1 class="main-title-desktop">Universos a la vuelta</h1>
 			<div class="nav">
-			<ul id="menu">
-  				<li>Aliens Shopping</li>
-  				<li>Plutonium fuel</li>
- 				<li>Gurdúues hunt</li>
- 				<li>Other planets</li>
-  				<li>MIB offices</li>
- 				<li>Mars attack 2</li>
-				<li>Spaceships sale!</li>
-			</ul>
+				<ul id="menu">
+					<li>
+						<a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\neptuno.html">Home</a>
+					</li>
+					<li>
+						<a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Aliens Shopping.html">Aliens Shopping</a>
+					</li>
+					<li>Plutonium fuel</li>
+					<li>Gurdúues hunt</li>
+					<li>Other planets</li>
+					<li>MIB offices</li>
+					<li>Mars attack 2</li>
+				</ul>
+			</div>
 		</header>
 		</div>
 		<div class="container">
-			<div class="wrapperExcursiones col-xs-12 col-md-9">
-				<div class="excursiones col-xs-12">
+			<div class="wrapperExcursiones col-xs-12 col-md-9 no-gutter">
+				<div class="excursiones col-xs-12" id="marte">
 					<div class="excursiones-marte excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="marte">
+						<div class="wrapper-texto-de-imagen">
 							<H2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -59,9 +67,9 @@
 						<p class="excursioner-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit vel dui ornare commodo. Aenean lacus elit, luctus ac libero quis, pretium malesuada nunc. Vivamus dignissim, ipsum in congue posuere, ligula sem fermentum erat, et varius erat tellus vel enim. Curabitur sed pretium mauris, et egestas felis. Vivamus at sapien ipsum. Praesent eu vehicula justo. Donec vulputate mauris eget risus semper tincidunt. Duis aliquet convallis mauris, aliquet dignissim enim venenatis eget. Ut ac tincidunt lacus. Suspendisse tristique luctus neque a eleifend. Aliquam felis sapien, interdum vel lacinia et, pellentesque eget dolor. Praesent molestie viverra est, eget tincidunt ante sagittis eget. Etiam vel sagittis purus. Etiam justo ligula, facilisis nec dignissim et, rhoncus a nisi.</p>
 					</div>
 				</div>
-				<div class="excursiones col-xs-12">
+				<div class="excursiones col-xs-12" id="saturno">
 					<div class="excursiones-saturno excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="saturno">
+						<div class="wrapper-texto-de-imagen">
 							<h2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -70,9 +78,9 @@
 						<p class="excursioner-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit vel dui ornare commodo. Aenean lacus elit, luctus ac libero quis, pretium malesuada nunc. Vivamus dignissim, ipsum in congue posuere, ligula sem fermentum erat, et varius erat tellus vel enim. Curabitur sed pretium mauris, et egestas felis. Vivamus at sapien ipsum. Praesent eu vehicula justo. Donec vulputate mauris eget risus semper tincidunt. Duis aliquet convallis mauris, aliquet dignissim enim venenatis eget. Ut ac tincidunt lacus. Suspendisse tristique luctus neque a eleifend. Aliquam felis sapien, interdum vel lacinia et, pellentesque eget dolor. Praesent molestie viverra est, eget tincidunt ante sagittis eget. Etiam vel sagittis purus. Etiam justo ligula, facilisis nec dignissim et, rhoncus a nisi.</p>
 					</div>
 				</div>
-				<div class="excursiones col-xs-12">
+				<div class="excursiones col-xs-12" id="pluton">
 					<div class="excursiones-pluton excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="pluton">
+						<div class="wrapper-texto-de-imagen">
 							<h2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -81,9 +89,9 @@
 						<p class="excursioner-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit vel dui ornare commodo. Aenean lacus elit, luctus ac libero quis, pretium malesuada nunc. Vivamus dignissim, ipsum in congue posuere, ligula sem fermentum erat, et varius erat tellus vel enim. Curabitur sed pretium mauris, et egestas felis. Vivamus at sapien ipsum. Praesent eu vehicula justo. Donec vulputate mauris eget risus semper tincidunt. Duis aliquet convallis mauris, aliquet dignissim enim venenatis eget. Ut ac tincidunt lacus. Suspendisse tristique luctus neque a eleifend. Aliquam felis sapien, interdum vel lacinia et, pellentesque eget dolor. Praesent molestie viverra est, eget tincidunt ante sagittis eget. Etiam vel sagittis purus. Etiam justo ligula, facilisis nec dignissim et, rhoncus a nisi.</p>
 					</div>
 				</div>
-				<div class="excursiones col-xs-12">
+				<div class="excursiones col-xs-12" id="venus">
 					<div class="excursiones-venus excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="venus">
+						<div class="wrapper-texto-de-imagen">
 							<h2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -92,9 +100,9 @@
 						<p class="excursioner-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit vel dui ornare commodo. Aenean lacus elit, luctus ac libero quis, pretium malesuada nunc. Vivamus dignissim, ipsum in congue posuere, ligula sem fermentum erat, et varius erat tellus vel enim. Curabitur sed pretium mauris, et egestas felis. Vivamus at sapien ipsum. Praesent eu vehicula justo. Donec vulputate mauris eget risus semper tincidunt. Duis aliquet convallis mauris, aliquet dignissim enim venenatis eget. Ut ac tincidunt lacus. Suspendisse tristique luctus neque a eleifend. Aliquam felis sapien, interdum vel lacinia et, pellentesque eget dolor. Praesent molestie viverra est, eget tincidunt ante sagittis eget. Etiam vel sagittis purus. Etiam justo ligula, facilisis nec dignissim et, rhoncus a nisi.</p>
 					</div>
 				</div>
-				<div class="excursiones col-xs-12">
+				<div class="excursiones col-xs-12" id="neptuno">
 					<div class="excursiones-neptuno excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="neptuno">
+						<div class="wrapper-texto-de-imagen">
 							<h2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -103,9 +111,9 @@
 						<p class="excursioner-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit vel dui ornare commodo. Aenean lacus elit, luctus ac libero quis, pretium malesuada nunc. Vivamus dignissim, ipsum in congue posuere, ligula sem fermentum erat, et varius erat tellus vel enim. Curabitur sed pretium mauris, et egestas felis. Vivamus at sapien ipsum. Praesent eu vehicula justo. Donec vulputate mauris eget risus semper tincidunt. Duis aliquet convallis mauris, aliquet dignissim enim venenatis eget. Ut ac tincidunt lacus. Suspendisse tristique luctus neque a eleifend. Aliquam felis sapien, interdum vel lacinia et, pellentesque eget dolor. Praesent molestie viverra est, eget tincidunt ante sagittis eget. Etiam vel sagittis purus. Etiam justo ligula, facilisis nec dignissim et, rhoncus a nisi.</p>
 					</div>
 				</div>
-				<div class="excursiones col-xs-12">
+				<div class="excursiones col-xs-12" id="luna">
 					<div class="excursiones-luna excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="luna">
+						<div class="wrapper-texto-de-imagen">
 							<h2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -114,9 +122,9 @@
 						<p class="excursioner-text-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit vel dui ornare commodo. Aenean lacus elit, luctus ac libero quis, pretium malesuada nunc. Vivamus dignissim, ipsum in congue posuere, ligula sem fermentum erat, et varius erat tellus vel enim. Curabitur sed pretium mauris, et egestas felis. Vivamus at sapien ipsum. Praesent eu vehicula justo. Donec vulputate mauris eget risus semper tincidunt. Duis aliquet convallis mauris, aliquet dignissim enim venenatis eget. Ut ac tincidunt lacus. Suspendisse tristique luctus neque a eleifend. Aliquam felis sapien, interdum vel lacinia et, pellentesque eget dolor. Praesent molestie viverra est, eget tincidunt ante sagittis eget. Etiam vel sagittis purus. Etiam justo ligula, facilisis nec dignissim et, rhoncus a nisi.</p>
 					</div>
 				</div>
-				<div class="excursiones col-xs-12">
+				<div class="excursiones col-xs-12" id="sol">
 					<div class="excursiones-sol excursiones-effect">
-						<div class="wrapper-texto-de-imagen" id="sol">
+						<div class="wrapper-texto-de-imagen">
 							<h2>Best title ever</h2>
 							<p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lacus, elementum nec massa vitae, ultrices accumsan tellus. Sed gravida leo quis orci rutrum dapibus. Class aptent taciti sociosqu ad.</p>
 						</div>
@@ -126,28 +134,28 @@
 					</div>
 				</div>
 			</div>
-			<div class="sidebar-wrapper col-xs-12 col-md-3">
-				<ul class="sidebar">
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#marte" class="sidebar-major-title">Marte</a>
+			<div class="sidebar-wrapper col-xs-12 col-md-3" id="right-nav">
+				<ul class="sidebar nav">
+					<li class="wrapper-sidebar-text">
+						<a href="#marte" class="nav-item sidebar-major-title">Marte</a>
 					</li>
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#saturno" class="sidebar-major-title">Saturno</a>
+					<li class="wrapper-sidebar-text">
+						<a href="#saturno" class="nav-item sidebar-major-title">Saturno</a>
 					</li>
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#pluton" class="sidebar-major-title">Plutón</a>
+					<li class="wrapper-sidebar-text">
+						<a href="#pluton" class="nav-item sidebar-major-title">Plutón</a>
 					</li>
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#venus" class="sidebar-major-title">Venus</a>
+					<li class="wrapper-sidebar-text">
+						<a href="#venus" class="nav-item sidebar-major-title">Venus</a>
 					</li>
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#neptuno" class="sidebar-major-title">Neptuno</a>
+					<li class="wrapper-sidebar-text">
+						<a href="#neptuno" class="nav-item sidebar-major-title">Neptuno</a>
 					</li>
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#luna" class="sidebar-major-title">Luna</a>
+					<li class="wrapper-sidebar-text">
+						<a href="#luna" class="nav-item sidebar-major-title">Luna</a>
 					</li>
-					<li id="right-nav" class="wrapper-sidebar-text">
-						<a href="#sol" class="sidebar-major-title">Sol</a>
+					<li class="wrapper-sidebar-text">
+						<a href="#sol" class="nav-item sidebar-major-title">Sol</a>
 					</li>
 				</ul>
 			</div>
@@ -192,12 +200,10 @@
 		});
 
 		// projects - scrollspy
-		var $body = $(document.body);
-		$body.scrollspy({
-			target: '#right-nav',
-			offset: 35
-		});
-		
+		/*
+		var $body = $("wrapperExcursiones");
+		$body.scrollspy();
+		*/
 
 	});
 </script>

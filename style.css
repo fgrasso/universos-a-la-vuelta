@@ -1,21 +1,14 @@
 body {
 	background: black;
 	margin: 0;
-	background-image: url(http://wallpaper-gallery.net/images/outer-space-wallpaper/outer-space-wallpaper-16.jpg);
+	background-image: url("images/outer-space-wallpaper-16.jpg");
 	max-width: none;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	display: block;
-}
-.circuloIzquierdo {
-	float: left;
-	width: 100px;
-	height: 100px;
-}
-.circuloDerecho {
-	float: right;
-	width: 100px;
-	height: 100px;
+	position: relative;
+	height: 100%;
+	overflow: scroll;
 }
 .info {
 	color: white;
@@ -111,31 +104,11 @@ div.sidebar a:hover{
     
 }
 div.excursiones a:hover{
-	color:white; background-color:transparent; text-decoration:underline;
+	color:white;
+	background-color:transparent;
+	text-decoration:underline;
 }
-div.nave {
-    position: fixed;
-    bottom: 120;
-    left: 0;
-    width: 160px;
-    height: 154;
-}
-div.nave a div.texto-top{
-	display: none;
-	position: absolute;
-	bottom: 90px;
-    left: 68px;
-}
-div.nave a img{
-	display: block;
-	z-index: -4;
-	background-repeat: no-repeat;
-}
-div.nave a:hover div.texto-top {
-	display: block;
-    color: black;
-    font-size: 14px;
-}
+
 div.clases-planetas{
 	border: none;
 }
@@ -184,7 +157,7 @@ div.wrapperExcursiones {
 	display: none;
 	font-family: monospace;
 }
-
+/*
 .wrapper-texto-de-imagen {
 	position: absolute;
    	top: -12px;
@@ -192,6 +165,7 @@ div.wrapperExcursiones {
    	width: 100%;
    	color: white;
 }
+*/
 
 .wrapper-texto-de-imagen p.info{
 	opacity: 0;
@@ -228,37 +202,37 @@ div.wrapperExcursiones {
 }
 
 .excursiones-marte {
-	background-image: url(http://i.ytimg.com/vi/qahrYLopPP4/maxresdefault.jpg);
+	background-image: url(images/maxresdefault.jpg);
 
 }
 
 .excursiones-saturno {
-	background-image: url(http://eskipaper.com/images/saturn-1.jpg);
+	background-image: url(images/saturn-1.jpg);
 
 }
 
 .excursiones-pluton {
-	background-image: url(http://eskipaper.com/images/pluto-5.jpg);
+	background-image: url(images/pluto-5.jpg);
 
 }
 
 .excursiones-venus {
-	background-image: url(http://i.huffpost.com/gen/1933808/thumbs/o-PLANET-VENUS-facebook.jpg);
+	background-image: url(images/o-PLANET-VENUS-facebook.jpg);
 
 }
 
 .excursiones-neptuno {
-	background-image: url(http://www.wallpapermaven.com/i/space/23/Neptune-1024x768.jpg);
+	background-image: url(images/Neptune-1024x768.jpg);
 
 }
 
 .excursiones-luna {
-	background-image: url(http://www.almanac.com/sites/default/files/styles/primary_image_in_article/public/images/moon.jpg?itok=Z3AXf6Oq);
+	background-image: url(images/moon.jpg);
 
 }
 
 .excursiones-sol {
-	background-image: url(https://thenypost.files.wordpress.com/2013/12/sun.jpg);
+	background-image: url(images/sun.jpg);
 }
 
 .excursiones-effect {
@@ -319,6 +293,13 @@ div.wrapperExcursiones {
     font-size: 20px;
     margin-bottom: -6px;
     padding-right: 10px;
+}
+
+.active {
+	background-color: transparent;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
 }
 
 .sidebar-major-title:hover { 
