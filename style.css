@@ -402,3 +402,27 @@ div.wrapperExcursiones {
 @font-face { font-family: moonhouse; src: url('moonhouse.ttf'); }
 @font-face { font-family: Moiser; src: url('Typo Moiser free promo.ttf'); }
 @font-face { font-family: digitaltech; src: url('Digital_tech.otf'); }
+
+/*
+
+Alien Food
+
+*/
+
+.alienfoodbanner {
+	background-image: url(images/alienfood.jpg);
+    max-width: none;
+    height: 500px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+}
+
+.alienhospitalbanner {
+	background-image: url(images/alienhospital.png);
+    max-width: none;
+    height: 500px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+}
