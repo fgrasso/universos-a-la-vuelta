@@ -30,7 +30,7 @@ h3 {
 	font-size: 22px;
 }
 
-.header li:hover {
+.header a:hover {
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
@@ -49,7 +49,7 @@ ul#menu li {
 	font-family: monospace;
 }
 h2 {
-	color:red;
+	color: white;
 	font-family: arial;
 	font-size:30px;
 }
@@ -416,6 +416,7 @@ Alien Food
     background-size: cover;
     background-position-y: 56%;
     background-position-x: 27%;
+	position: relative;
 }
 
 .alienhospitalbanner {
@@ -425,4 +426,43 @@ Alien Food
     background-size: cover;
     background-position-y: 56%;
     background-position-x: 27%;
+}
+
+.initialtexttitle {
+	color: whitesmoke;
+    font-size: 34px;
+	margin-top: 4%;
+}
+
+.initialtext {
+	color: white;
+    font-size: 30px;
+}
+
+.initialsection {
+	height: 20%;
+    width: 50%;
+	margin: 4% 0 20% 0;
+}
+
+.outterfoodtext {
+	color: wheat;
+	position: absolute;
+	bottom: 10px;
+}
+
+.wrapper-outterfoodtext h2.outterfoodtext{
+	opacity: 0;
+   	transform: translatey(20px);
+   	transition: all ease 1s;
+}
+
+.alienfoodbanner:hover .wrapper-outterfoodtext .outterfoodtext{
+	opacity: 1;
+	transform: translatey(0);
+}
+
+.textafterfoodbanner {
+	color: white;
+    font-size: 16px;
 }

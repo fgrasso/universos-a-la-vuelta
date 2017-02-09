@@ -8,32 +8,52 @@
         <h1 class="main-title-mobile menu-opener">Universos a la vuelta</h1>
         <ul id="menu-mobile" class="menu-closed">
             <li>
-                <a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\neptuno.html">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li>
-                <a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Aliens Shopping.html">Alien services</a>
+                <a href="aliens-shopping.php">Alien services</a>
             </li>
-            <li>Plutonium fuel</li>
-            <li>Gurdúues hunt</li>
-            <li>Other planets</li>
-            <li>MIB offices</li>
-            <li>Mars attack 2</li>
+            <li>
+                <a href="#">Plutonium fuel</a>
+            </li>
+            <li>
+                <a href="#">Gurdúues hunt</a>
+            </li>
+            <li>
+                <a href="#">Other planets</a>
+            </li>
+            <li>
+                <a href="#">MIB offices</a>
+            </li>
+            <li>
+                <a href="#">Mars attack 2</a>
+            </li>
         </ul>
     </div>
     <h1 class="main-title-desktop">Universos a la vuelta</h1>
     <div class="nav">
         <ul id="menu">
             <li>
-                <a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\neptuno.html">Home</a>
+                <a href="index.php">Home</a>
             </li>
             <li>
-                <a href="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Alien services.html">Aliens Shopping</a>
+                <a href="aliens-shopping.php">Alien services</a>
             </li>
-            <li>Plutonium fuel</li>
-            <li>Gurdúues hunt</li>
-            <li>Other planets</li>
-            <li>MIB offices</li>
-            <li>Mars attack 2</li>
+            <li>
+                <a href="#">Plutonium fuel</a>
+            </li>
+            <li>
+                <a href="#">Gurdúues hunt</a>
+            </li>
+            <li>
+                <a href="#">Other planets</a>
+            </li>
+            <li>
+                <a href="#">MIB offices</a>
+            </li>
+            <li>
+                <a href="#">Mars attack 2</a>
+            </li>
         </ul>
     </div>
 </header>
