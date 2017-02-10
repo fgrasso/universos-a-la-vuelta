@@ -8,7 +8,7 @@ body {
 	display: block;
 	position: relative;
 	height: 100%;
-	overflow: scroll;
+	overflow: auto;
 }
 .info {
 	color: white;
@@ -157,15 +157,6 @@ div.wrapperExcursiones {
 	display: none;
 	font-family: monospace;
 }
-/*
-.wrapper-texto-de-imagen {
-	position: absolute;
-   	top: -12px;
-   	left: 0;
-   	width: 100%;
-   	color: white;
-}
-*/
 
 .wrapper-texto-de-imagen p.info{
 	opacity: 0;
@@ -377,7 +368,7 @@ div.wrapperExcursiones {
 	}
 	ul#menu li {
     width: 110px;
-}
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -411,27 +402,51 @@ Alien Food
 
 .alienfoodbanner {
 	background-image: url(images/alienfood.jpg);
-    max-width: none;
-    height: 500px;
+    width: 100%;
+    height: 300px;
     background-size: cover;
     background-position-y: 56%;
     background-position-x: 27%;
-	position: relative;
+    position: relative;
+    display: table;
 }
 
 .alienhospitalbanner {
 	background-image: url(images/alienhospital.png);
-    max-width: none;
-    height: 500px;
+    width: 100%;
+    height: 300px;
     background-size: cover;
     background-position-y: 56%;
     background-position-x: 27%;
+    position: relative;
+    display: table;
+}
+
+.alienshipbanner {
+	background-image: url(images/spaceship.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+    position: relative;
+    display: table;
+}
+
+.aliensportbanner {
+	background-image: url(images/alienbox.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+    position: relative;
+    display: table;
 }
 
 .initialtexttitle {
 	color: whitesmoke;
     font-size: 34px;
-	margin-top: 4%;
 }
 
 .initialtext {
@@ -440,20 +455,47 @@ Alien Food
 }
 
 .initialsection {
-	height: 20%;
-    width: 50%;
-	margin: 4% 0 20% 0;
+	margin: 8% 0 8% 0;
 }
 
 .outterfoodtext {
-	color: wheat;
-	position: absolute;
-	bottom: 10px;
+	color: #c06b17;
+	padding-left: initial;
+	padding-right: initial; 
+	
+}
+
+.outterhospitaltext {
+	color: #c06b17;
+	padding-left: initial;
+	padding-right: initial;
+}
+
+.wrapper-outterfoodtext {
+	width: 100%;
+    height: 100%;
+    display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.wrapper-outterhospitaltext {
+	width: 100%;
+    height: 100%;
+    display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
 }
 
 .wrapper-outterfoodtext h2.outterfoodtext{
-	opacity: 0;
-   	transform: translatey(20px);
+	opacity: 1;
+   	transform: translatey(0px);
+   	transition: all ease 1s;
+}
+
+.wrapper-outterhospitaltext h2.outterhospitaltext{
+	opacity: 1;
+   	transform: translatey(0px);
    	transition: all ease 1s;
 }
 
@@ -462,7 +504,81 @@ Alien Food
 	transform: translatey(0);
 }
 
+.alienhospitalbanner:hover .wrapper-outterhospitaltext .outterhospitaltext{
+	opacity: 1;
+	transform: translatey(0);
+}
+
 .textafterfoodbanner {
 	color: white;
     font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 4%;
+}
+
+.textafterhospitalbanner {
+	color: white;
+    font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 4%;
+	float: right;
+}
+
+.wrapper-title {
+	height: 70vh;
+	padding-top: 10%;
+	text-align: center;
+}
+
+@media (min-width: 768px){
+	/*
+	#menu{
+		display: block;
+		font-size: 15px;
+	}
+	*/
+}
+
+@media (min-width: 991px){
+	.alienfoodbanner {
+		height: 500px;
+	}
+	.alienhospitalbanner {
+		height: 500px;
+	}
+	.wrapper-outterfoodtext h2.outterfoodtext {
+		opacity: 0;
+		transform: translatey(20px);
+	}
+	.wrapper-outterhospitaltext h2.outterhospitaltext {
+		opacity: 0;
+		transform: translatey(20px);
+	}
+	.initialsection {
+		margin: 4% 0 10% 0;
+	}
+	.textafterfoodbanner {
+		width: 50%;
+	}
+	.textafterhospitalbanner {
+		width: 50%;
+	}
+	.outterfoodtext {
+		color: #c06b17;
+		padding-left: 4%;
+    	padding-bottom: 2%;
+	}
+	.wrapper-outterfoodtext {
+		text-align: initial;
+	}
+	.outterhospitaltext {
+		color: #c06b17;
+		padding-right: 4%;
+    	padding-bottom: 2%;
+	}
+	.wrapper-outterhospitaltext {
+		text-align: right;
+	}
 }
