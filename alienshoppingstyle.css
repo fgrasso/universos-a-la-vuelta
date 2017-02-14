@@ -1,0 +1,290 @@
+/*
+
+Alien Food
+
+*/
+
+.alienfoodbanner {
+	background-image: url(images/alienfood.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+    position: relative;
+    display: table;
+}
+
+.alienhospitalbanner {
+	background-image: url(images/alienhospital.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+    position: relative;
+    display: table;
+}
+
+.alienshipbanner {
+	background-image: url(images/spaceship.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+    position: relative;
+    display: table;
+}
+
+.aliensportbanner {
+	background-image: url(images/alienbox.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position-y: 56%;
+    background-position-x: 27%;
+    position: relative;
+    display: table;
+}
+
+.initialtexttitle {
+	color: whitesmoke;
+    font-size: 34px;
+}
+
+.initialtext {
+	color: white;
+    font-size: 30px;
+}
+
+.initialsection {
+	margin: 8% 0 8% 0;
+}
+
+.outterfoodtext {
+	color: #c06b17;
+	padding-left: initial;
+	padding-right: initial; 
+}
+
+.outterhospitaltext {
+	color: #c06b17;
+	padding-left: initial;
+	padding-right: initial;
+}
+
+.alienshiptext {
+	color: #c06b17;
+	padding-left: initial;
+	padding-right: initial; 	
+}
+
+.aliensporttext {
+	color: #c06b17;
+	padding-left: initial;
+	padding-right: initial;
+}
+
+.wrapper-outterfoodtext {
+	width: 100%;
+    height: 100%;
+    display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.wrapper-outterhospitaltext {
+	width: 100%;
+    height: 100%;
+    display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.wrapper-alienshiptext {
+	width: 100%;
+    height: 100%;
+    display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.wrapper-aliensporttext {
+	width: 100%;
+    height: 100%;
+    display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.wrapper-outterfoodtext h2.outterfoodtext{
+	opacity: 1;
+   	transform: translatey(0px);
+   	transition: all ease 1s;
+}
+
+.wrapper-outterhospitaltext h2.outterhospitaltext{
+	opacity: 1;
+   	transform: translatey(0px);
+   	transition: all ease 1s;
+}
+
+.wrapper-alienshiptext h2.alienshiptext{
+	opacity: 1;
+   	transform: translatey(0px);
+   	transition: all ease 1s;
+}
+
+.wrapper-aliensporttext h2.aliensporttext{
+	opacity: 1;
+   	transform: translatey(0px);
+   	transition: all ease 1s;
+}
+
+.alienfoodbanner:hover .wrapper-outterfoodtext .outterfoodtext{
+	opacity: 1;
+	transform: translatey(0);
+}
+
+.alienhospitalbanner:hover .wrapper-outterhospitaltext .outterhospitaltext{
+	opacity: 1;
+	transform: translatey(0);
+}
+
+.alienshipbanner:hover .wrapper-alienshiptext .alienshiptext{
+	opacity: 1;
+	transform: translatey(0);
+}
+
+.aliensportbanner:hover .wrapper-aliensporttext .aliensporttext{
+	opacity: 1;
+	transform: translatey(0);
+}
+
+.textafterfoodbanner {
+	color: white;
+    font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 4%;
+}
+
+.textafterhospitalbanner {
+	color: white;
+    font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 4%;
+	float: right;
+}
+
+.textafterspacebanner {
+	color: white;
+    font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 4%;
+}
+
+.textaftersportbanner {
+	color: white;
+    font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 4%;
+	float: right;
+}
+
+.wrapper-title {
+	height: 70vh;
+	padding-top: 10%;
+	text-align: center;
+}
+
+@media (min-width: 768px){
+	/*
+	#menu{
+		display: block;
+		font-size: 15px;
+	}
+	*/
+}
+
+@media (min-width: 991px){
+	.alienfoodbanner {
+		height: 500px;
+	}
+	.alienhospitalbanner {
+		height: 500px;
+	}
+    .alienshipbanner {
+		height: 500px;
+	}
+	.aliensportbanner {
+		height: 500px;
+	}
+	.wrapper-outterfoodtext h2.outterfoodtext {
+		opacity: 0;
+		transform: translatey(20px);
+	}
+	.wrapper-outterhospitaltext h2.outterhospitaltext {
+		opacity: 0;
+		transform: translatey(20px);
+	}
+    .wrapper-alienshiptext h2.alienshiptext {
+		opacity: 0;
+		transform: translatey(20px);
+	}
+	.wrapper-aliensporttext h2.aliensporttext {
+		opacity: 0;
+		transform: translatey(20px);
+	}
+	.initialsection {
+		margin: 4% 0 10% 0;
+	}
+	.textafterfoodbanner {
+		width: 50%;
+	}
+	.textafterhospitalbanner {
+		width: 50%;
+	}
+    .textafterspacebanner {
+		width: 50%;
+	}
+	.textaftersportbanner {
+		width: 50%;
+	}
+	.outterfoodtext {
+		color: #c06b17;
+		padding-left: 4%;
+    	padding-bottom: 2%;
+	}
+	.wrapper-outterfoodtext {
+		text-align: initial;
+	}
+	.outterhospitaltext {
+		color: #c06b17;
+		padding-right: 4%;
+    	padding-bottom: 2%;
+	}
+	.wrapper-outterhospitaltext {
+		text-align: right;
+	}
+    .alienshiptext {
+		color: #c06b17;
+		padding-left: 4%;
+    	padding-bottom: 2%;
+	}
+	.wrapper-alienshiptext {
+		text-align: initial;
+	}
+    .aliensporttext {
+		color: #c06b17;
+		padding-right: 4%;
+    	padding-bottom: 2%;
+	}
+	.wrapper-aliensporttext {
+		text-align: right;
+	}
+}
