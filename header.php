@@ -1,17 +1,27 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Universos a la vuelta</title>
+        <title>Universos a la vuelta</title>
+        
+        <!-- Stylesheets -->
 		<link rel="stylesheet" href="style.less" type="text/less" >
         <link rel="stylesheet" href="alienshoppingstyle.less" type="text/less" >
         <link rel="stylesheet" href="plutonium-fuel.less" type="text/less" >
-		<script rel="C:\Users\facun\Repositorios\Universos-a-la-vuelta\Script" src="myScript.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--<link href="Bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">-->
+        <!-- Stylesheets end -->
+
+        <!-- Less -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+        
+        <!-- Compatibility with old internet explorer versions: http://bit.ly/2vMseGq -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap css -->
         <link href="Bootstrap/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" rel="stylesheet">
-		z<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+
+        
+		<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 	</head>
 	<body data-spy="scroll" data-target="#right-nav" data-offset="10">
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
